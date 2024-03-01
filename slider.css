@@ -1,0 +1,54 @@
+.slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.slides-container {
+    display: flex;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    width: 817px;
+    height: 545px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.thumbnails {
+    display: flex;
+    overflow: hidden;
+}
+
+.thumbnail {
+    width: 120px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.slide {
+    flex: 0 0 100%;
+    /* Каждый слайд имеет ширину равную 100% контейнера слайдера */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+    display: none;
+    /* Скрыть все слайды по умолчанию */
+}
+
+.slide.active {
+    display: block;
+    /* Показать только активный слайд */
+}
